@@ -6,8 +6,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import <CPrefs/CPParallaxBannerAsset.h>
-
+typedef enum CPParallaxTypeEnum : NSUInteger {
+    CFParallaxNormalType,
+    CFParallaxReversedType,
+    CFParallaxDisabledType
+} CPParallaxType;
 
 @interface CPParallaxBanner : UIView
 @property (nonatomic, retain) NSString *bundleName;
@@ -19,4 +22,5 @@
 - (id) initWithFrame:(CGRect)frame bundleName:(NSString *)bundleName;
 - (void) addParallaxImageNamed:(NSString *)name withEffectType:(CPParallaxType)effectType;
 - (void) validateImageWithName:(NSString *)path completion:(void(^)(BOOL exists, BOOL isDirectory))completion;
+- (UIImage *) imageWithContentsOfFile:(NSString *)file withParallaxType:(CPParallaxType)parallaxType;
 @end

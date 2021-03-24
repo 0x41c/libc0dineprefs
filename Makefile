@@ -1,5 +1,5 @@
 TARGET := iphone:clang:latest:7.0
-THEOS_DEVICE_IP = 192.168.0.34
+THEOS_DEVICE_IP = 192.168.0.35
 LIBRARY_NAME = CPrefs
 SUBPROJECTS += CPrefstest
 

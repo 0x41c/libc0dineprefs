@@ -38,4 +38,10 @@
    completion(exists, isDir);
 }
 
+- (UIImage *) imageWithContentsOfFile:(NSString *)path withParallaxType:(CPParallaxType)parallaxType {
+    UIImage *image =  [UIImage imageWithContentsOfFile:path];
+    
+    return image;
+}
+
 @end

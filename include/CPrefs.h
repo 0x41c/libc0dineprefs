@@ -5,6 +5,5 @@
  */
 
 
-#import <CPrefs/CPParallaxBannerAsset.h>
 #import <CPrefs/CPParallaxBanner.h>
 //#import <CPrefs/CPRootListController.h>

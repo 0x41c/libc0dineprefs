@@ -1,0 +1,10 @@
+Package: com.c0dine.libc0dinepreferences
+Name: libc0dinepreferences
+Architecture: iphoneos-arm
+Description: My personal preferences library
+Maintainer: c0dine
+Author: c0dine
+Section: System
+Tag: role::developer
+Version: 0.0.1-9+debug
+Installed-Size: 376
